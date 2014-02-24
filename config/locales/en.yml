@@ -1,0 +1,6 @@
+en:
+  xsd_errors:
+    'unkown': '[%{error_code}] %{error_msg}'
+    '1840': 'O Elemento "%{element}" tem o valor "%{value}" mas este não é um dos valores permitidos: "%{set}"'
+    '1845': 'Não foi encontrada uma declaração global para o element root "%{element}"'
+    '1868': 'O Atributo "%{attribute}" do Elemento "%{element}" é obrigatório'
