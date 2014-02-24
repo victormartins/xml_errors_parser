@@ -1,6 +1,6 @@
 en:
   xsd_errors:
-    'unkown': '[%{error_code}] %{error_msg}'
-    '1840': 'O Elemento "%{element}" tem o valor "%{value}" mas este não é um dos valores permitidos: "%{set}"'
-    '1845': 'Não foi encontrada uma declaração global para o element root "%{element}"'
-    '1868': 'O Atributo "%{attribute}" do Elemento "%{element}" é obrigatório'
+    'unkown': '[%{error_code}] %{error_msg}.'
+    '1840': 'The Element "%{element}" has the Value "%{value}" but it is not one from the Set: "%{set}".'
+    '1845': 'The Element "%{element}" has no matching global declaration available for the validation root.'
+    '1868': 'The Attribute "%{attribute}" of the Element "%{element}" is mandatory.'

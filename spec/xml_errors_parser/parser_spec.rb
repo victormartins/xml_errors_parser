@@ -21,8 +21,8 @@ describe XmlErrorsParser::Parser do
     ]
 
     expected_errors = [
-      'O Atributo "Id" do Elemento "infNFe" é obrigatório',
-      'O Atributo "Bar" do Elemento "Foo" é obrigatório'
+      "The Attribute \"Id\" of the Element \"infNFe\" is mandatory.",
+      "The Attribute \"Bar\" of the Element \"Foo\" is mandatory.",
     ]
 
     described_class.new(errors).errors.should == expected_errors

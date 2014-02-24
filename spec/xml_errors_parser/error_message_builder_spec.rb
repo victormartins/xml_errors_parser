@@ -8,7 +8,7 @@ describe XmlErrorsParser::ErrorMessageBuilder do
         attribute: 'Bar'
       }
       msg = described_class.build_message_for(get_code, tokens)
-      msg.should == 'O Atributo "Bar" do Elemento "Foo" é obrigatório'
+      msg.should == 'The Attribute "Bar" of the Element "Foo" is mandatory.'
     end
   end
 
@@ -20,7 +20,7 @@ describe XmlErrorsParser::ErrorMessageBuilder do
         set: "{'1','2','3'}"
       }
       msg = described_class.build_message_for(get_code, tokens)
-      msg.should == 'O Elemento "Foo" tem o valor "5" mas este não é um dos valores permitidos: "{\'1\',\'2\',\'3\'}"'
+      msg.should == "The Element \"Foo\" has the Value \"5\" but it is not one from the Set: \"{'1','2','3'}\"."
     end
   end
 
@@ -28,7 +28,7 @@ describe XmlErrorsParser::ErrorMessageBuilder do
     it 'should work' do
       tokens = { element: 'XPTo' }
       msg = described_class.build_message_for(get_code, tokens)
-      msg.should == 'Não foi encontrada uma declaração global para o element root "XPTo"'
+      msg.should == 'The Element "XPTo" has no matching global declaration available for the validation root.'
     end
   end
 
@@ -36,7 +36,7 @@ describe XmlErrorsParser::ErrorMessageBuilder do
     it 'should return the full message plus the code' do
       tokens = { error_msg: 'full message'}
       msg = described_class.build_message_for(get_code, tokens)
-      msg.should == '[UNKNOWN] full message'
+      msg.should == '[UNKNOWN] full message.'
     end
   end
 
