@@ -1,4 +1,5 @@
 # XmlErrorsParser
+[![Gem Version](https://badge.fury.io/rb/xml_errors_parser.png)](http://badge.fury.io/rb/xml_errors_parser)
 
   When validating XML using a XSD, we get error messages that are not very friendly, for example:
 
