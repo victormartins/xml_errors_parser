@@ -4,10 +4,9 @@ module XmlErrorsParser
 
     # Regular expressions for each error code
     ERRORS_REGEX = {
-      '1868' => /(}(?<element>.*?)').*(attribute.'(?<attribute>.*)')/,
       '1840' => /(}(?<element>.*?)').*(value.'(?<value>.*)').is.not .*((?<set>{.*}))/,
-      '1845' => /}(?<element>.*?)'/
-
+      '1845' => /}(?<element>.*?)'/,
+      '1868' => /(}(?<element>.*?)').*(attribute.'(?<attribute>.*)')/
     }
 
     # Given a xsd error code returns the respective regular expression.
