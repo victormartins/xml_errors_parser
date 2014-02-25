@@ -58,6 +58,9 @@ tokens exist, the right message will be created. Just follow one of the examples
 
 4. To make the test pass just add the new error message in: `/config/locales/en.yml`
 
+5. In the end **always** run `bundle exec fudge build` to validate the build before doing a pull request. This will check
+specs, code coverage, documentation and code style.
+
 ```
 en:
   xsd_errors:
@@ -71,6 +74,7 @@ en:
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Run `bundle exec fudge build` to see if the build passes
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request

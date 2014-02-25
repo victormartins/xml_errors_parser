@@ -1,4 +1,4 @@
-
+# Main module
 module XmlErrorsParser
   require_relative 'xml_errors_parser/version'
 

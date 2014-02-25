@@ -1,0 +1,5 @@
+flay:
+  max: 40
+flog:
+  max: 10
+  average: 7
