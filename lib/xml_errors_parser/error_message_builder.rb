@@ -1,5 +1,7 @@
 module XmlErrorsParser
-  require 'I18n'
+  require 'i18n'
+  I18n.reload!
+
   # This class will take the error code and the error tokens and translate them
   # to a classic I18n message
   class ErrorMessageBuilder
