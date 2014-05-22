@@ -4,3 +4,5 @@ en:
     '1840': 'The Element "%{element}" has the Value "%{value}" but it is not one from the Set: "%{set}".'
     '1845': 'The Element "%{element}" has no matching global declaration available for the validation root.'
     '1868': 'The Attribute "%{attribute}" of the Element "%{element}" is mandatory.'
+    '1839': 'The Value "%{value}" for the Element "%{element}" is not accepted by the pattern "%{pattern}"'
+    '1824': 'The Value "%{value}" for the Element "%{element}" is not a valid value for the type.'
