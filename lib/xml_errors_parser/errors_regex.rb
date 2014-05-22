@@ -7,7 +7,8 @@ module XmlErrorsParser
       '1840' => /(}(?<element>.*?)').*(value.'(?<value>.*)').is.not .*((?<set>{.*}))/,
       '1845' => /}(?<element>.*?)'/,
       '1868' => /(}(?<element>.*?)').*(attribute.'(?<attribute>.*)')/,
-      '1839' => /(}(?<element>.*?)').*(value.'(?<value>.*)')\sis\snot*\saccepted\sby\sthe\spattern.(?<pattern>.*)/
+      '1839' => /(}(?<element>.*?)').*(value.'(?<value>.*)')\sis\snot*\saccepted\sby\sthe\spattern.(?<pattern>.*)/,
+      '1824' => /(}(?<element>.*?)')\:\s\'(?<value>.*)\'.is.not.a.valid.value/
     }
 
     # Given a xsd error code returns the respective regular expression.

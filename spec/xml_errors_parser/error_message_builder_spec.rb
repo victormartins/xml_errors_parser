@@ -40,7 +40,15 @@ describe XmlErrorsParser::ErrorMessageBuilder do
         pattern: "'[0-9]{0}|[0-9]{14}'"
       }
       msg = described_class.build_message_for(get_code, tokens)
-      msg.should == 'The Value "NAO INFORMADO" for the Element "CNPJ" is not accepted by the pattern "\'[0-9]{0}|[0-9]{14}\"'
+      msg.should == 'The Value "NAO INFORMADO" for the Element "CNPJ" is not accepted by the pattern "\'[0-9]{0}|[0-9]{14}\'"'
+    end
+  end
+
+  describe 'message for code #1824' do
+    it 'should work' do
+      tokens = { element: 'vUnCom', value: 'vazio' }
+      msg = described_class.build_message_for(get_code, tokens)
+      msg.should == 'The Value "vazio" for the Element "vUnCom" is not a valid value for the type.'
     end
   end
 
