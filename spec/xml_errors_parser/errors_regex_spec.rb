@@ -42,6 +42,24 @@ describe XmlErrorsParser::ErrorsRegex do
         mg[:element].should == 'NFe'
       end
     end
+
+    describe '1839' do
+      it 'should work' do
+        msg = "Element '{http://www.portalfiscal.inf.br/nfe}CNPJ': [facet 'pattern'] The value 'NAO INFORMADO' is not accepted by the pattern '[0-9]{14}'"
+        mg = regex.match(msg)
+        mg[:element].should == 'CNPJ'
+        mg[:pattern].should == "'[0-9]{14}'"
+      end
+    end
+
+    describe '1824' do
+      it 'should work' do
+        msg = "Element '{http://www.portalfiscal.inf.br/nfe}vUnCom': 'teste' is not a valid value of the atomic type '{http://www.portalfiscal.inf.br/nfe}TDec_1110'."
+        mg = regex.match(msg)
+        mg[:element].should == 'vUnCom'
+        mg[:value].should == 'teste'
+      end
+    end
   end
 
   def get_code
