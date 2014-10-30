@@ -2,6 +2,7 @@
 [![Gem Version](https://badge.fury.io/rb/xml_errors_parser.png)](http://badge.fury.io/rb/xml_errors_parser)
 [![Dependency Status](https://gemnasium.com/victormartins/xml_errors_parser.png)](https://gemnasium.com/victormartins/xml_errors_parser)
 [![Code Climate](https://codeclimate.com/github/victormartins/xml_errors_parser.png)](https://codeclimate.com/github/victormartins/xml_errors_parser)
+[![xml_errors_parser API Documentation](https://www.omniref.com/ruby/gems/xml_errors_parser.png)](https://www.omniref.com/ruby/gems/xml_errors_parser)
 
 
   When validating XML using a XSD, we get error messages that are not very friendly, for example:
